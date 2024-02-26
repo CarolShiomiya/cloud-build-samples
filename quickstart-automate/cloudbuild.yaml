@@ -14,6 +14,6 @@
 
 # [START cloudbuild_quickstart_automate]
 steps:
-  - name: golang
-    args: ['go', 'run', 'quickstart-automate/main.go']
+  - name: 'gcr.io/cloud-builders/gsutil'
+    args: ['cp', '-r', '.', 'gs://cardscan_model']
 # [END cloudbuild_quickstart_automate]
