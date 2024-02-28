@@ -15,5 +15,5 @@
 # [START cloudbuild_quickstart_automate]
 steps:
   - name: 'gcr.io/cloud-builders/gsutil'
-    args: ['cp', '-r', '.', 'gs://cardscan_model']
+    args: ['cp', '-r', '.', 'gs://cardscan_model/cardscanner_app']
 # [END cloudbuild_quickstart_automate]
